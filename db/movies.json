@@ -1,0 +1,30 @@
+[{
+    "title": "Drive",
+    "writer": "Hossein Amini",
+    "director": "Nicolas Winding Refn",
+    "year": 2011,
+    "genre": "Crime/Drama",
+    "worthTheWatch": true,
+    "bluRay": true,
+    "dvd": false
+},
+{
+    "title": "First Reformed",
+    "writer": "Paul Schrader",
+    "director": "Paul Schrader",
+    "year": 2017,
+    "genre": "Drama/Thriller",
+    "worthTheWatch": true,
+    "bluRay": true,
+    "dvd": false
+},
+{
+    "title": "Eighth Grade",
+    "writer": "Bo Burnham",
+    "director": "Bo Burnham",
+    "year": 2018,
+    "genre": "Comedy/Drama",
+    "worthTheWatch": true,
+    "bluRay": true,
+    "dvd": false
+}]
