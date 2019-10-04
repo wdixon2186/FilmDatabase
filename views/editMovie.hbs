@@ -1,0 +1,15 @@
+<h2>Edit Movie:</h2>
+
+<form action="/{{myMovie.name}}?_method=put" method="post">
+  <p>
+    <label>Name:</label>
+    <input type="text" value="{{myMovie.name}}" name="attribute"/>
+  </p>
+  <input type="submit" value="Update" />
+</form>
+
+<h2>Delete Movie?</h2>
+
+<form action="/{{myMovie.name}}?_method=delete" method="post">
+  <input type="submit" value="Remove">
+</form>

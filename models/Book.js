@@ -1,7 +1,7 @@
 const mongoose = require("../db/connection");
 
 
-const BookSchema = new mongoose.BookSchema({
+const BookSchema = new mongoose.Schema({
     title: String,
     numberOfPages: Number,
     author: String,
