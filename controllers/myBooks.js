@@ -15,7 +15,7 @@ router.get('/newBook', (req, res) => {
   })
 router.post('/', (req, res) => {
     Books.create(req.body).then(newBook => {
-        res.json(newBook);
+        res.redirect('/books');
     })
 })
 
@@ -31,7 +31,6 @@ router.get('/editBook/:id', (req, res) => {
   })
 router.put('/:id',(req,res) => {
     Books.findByIdAndUpdate({_id: req.params.id}, req.body).then(myBooks => {
-        console.log(myBooks);
         res.redirect('/books')
     })
 })

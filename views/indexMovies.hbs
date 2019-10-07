@@ -1,9 +1,11 @@
 
 <h1>Movies</h1>
 <ul>
-    {{#each myMovies as |myMovie|}}
+    {{#each myMovies}}
     <li>
-        {{myMovie.title}}
+        <a href= "/movies/{{this.id}}">{{this.title}}</a>
     </li>
     {{/each}}
 </ul>
+
+<a href="/movies/newMovie">New Movie</a>

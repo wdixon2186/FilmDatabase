@@ -7,25 +7,36 @@ router.get('/', (req,res) => {
     Movies.find({}).then(myMovies => res.render('indexMovies', {myMovies}))
 })
 
+router.get('/newMovie', (req, res) => {
+    res.render('newMovie')
+  })
+
 router.post('/', (req, res) => {
     Movies.create(req.body).then(newMovie => {
-        res.json(newMovie);
+        res.redirect('/movies');
     })
 })
 
-router.get('/:title', (req,res) => {
-    Movies.findOne({title: req.params.title}).then(movieName => res.render('showMovies', {movieName}))
+router.get('/:id', (req,res) => {
+    Movies.findOne({_id: req.params.id}).then(movieName => res.render('showMovies', movieName))
 })
 
-router.put('/:title',(req,res) => {
-    Movies.findOneAndUpdate({title: req.params.title}, req.body, {new: true}).then(() => {
+router.get('/editMovie/:id', (req, res) => {
+    Movies.findOne({_id: req.params.id})
+      .then(myMovies => {
+        res.render("editMovie", {myMovies })
+      })
+  })
+
+router.put('/:id',(req,res) => {
+    Movies.findByIdAndUpdate({_id: req.params.id}, req.body).then(() => {
         res.redirect('/movies')
     })
 })
 
-router.delete('/:title', (req,res) => {
-    Movies.findOneAndRemove({ title: req.params.title}).then(() => {
-        res.redirect('/')
+router.delete('/:id', (req,res) => {
+    Movies.findOneAndDelete({ _id: req.params.id}).then(() => {
+        res.redirect('/movies')
     })
 })
 
