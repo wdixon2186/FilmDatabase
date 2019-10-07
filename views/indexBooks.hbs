@@ -1,8 +1,10 @@
 <h1>Books</h1>
 <ul>
-    {{#each myBooks as |myBook|}}
+    {{#each myBooks}}
     <li>
-        <a href= "/showBooks">{{myBook.title}}</a>
+        <a href= "/books/{{this.id}}">{{this.title}}</a>
     </li>
     {{/each}}
 </ul>
+
+<a href="/books/newBook">New Book</a>

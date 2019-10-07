@@ -1,58 +1,58 @@
 <h2>Edit Book:</h2>
 
-<form action="/{{myBooks.name}}?_method=put" method="post">
+<form action="/books/{{myBooks.id}}?_method=put" method="post">
   <p>
     <label>Name:</label>
-    <input type="text" value="{{myBooks.title}}" name="attribute"/>
+    <input type="text" value="{{myBooks.title}}" name="title"/>
   </p>
-  <input type="submit" value="Update" />
+  
 
     <p>
     <label>Author:</label>
-    <input type="text" value="{{myBooks.author}}" name="attribute"/>
+    <input type="text" value="{{myBooks.author}}" name="author"/>
   </p>
-  <input type="submit" value="Update" />
+ 
 
     <p>
     <label>Year:</label>
-    <input type="text" value="{{myBooks.year}}" name="attribute"/>
+    <input type="text" value="{{myBooks.year}}" name="year"/>
   </p>
-  <input type="submit" value="Update" />
+ 
 
     <p>
     <label>Number of Pages:</label>
-    <input type="text" value="{{myBooks.numberOfPages}}" name="attribute"/>
+    <input type="text" value="{{myBooks.numberOfPages}}" name="numberOfPages"/>
   </p>
-  <input type="submit" value="Update" />
+ 
 
   <p>
     <label>Genre:</label>
-    <input type="text" value="{{myBooks.genre}}" name="attribute"/>
+    <input type="text" value="{{myBooks.genre}}" name="genre"/>
   </p>
-  <input type="submit" value="Update" />
+ 
 
     <p>
     <label>Worth Reading:</label>
-    <input type="text" value="{{myBooks.worthReading}}" name="attribute"/>
+    <input type="text" value="{{myBooks.worthReading}}" name="worthReading"/>
   </p>
-  <input type="submit" value="Update" />
+ 
 
     <p>
     <label>Own it in Hardcover:</label>
-    <input type="text" value="{{myBooks.hardcover}}" name="attribute"/>
+    <input type="text" value="{{myBooks.hardcover}}" name="hardcover"/>
   </p>
-  <input type="submit" value="Update" />
+ 
 
     <p>
     <label>Own it in paperback:</label>
-    <input type="text" value="{{myBooks.paperback}}" name="attribute"/>
+    <input type="text" value="{{myBooks.paperback}}" name="paperback"/>
   </p>
   <input type="submit" value="Update" />
 </form>
 
 <h2>Delete Book?</h2>
 
-<form action="/{{myBooks.title}}?_method=delete" method="post">
+<form action="/books/{{myBooks.id}}?_method=delete" method="post">
   <input type="submit" value="Remove">
 </form>
 

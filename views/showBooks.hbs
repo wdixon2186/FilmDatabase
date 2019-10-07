@@ -1,5 +1,13 @@
 <h1>Information on the book</h1>
-<h2>{{bookName}}</h2>
+<h3>Title: {{this.title}}</h3>
+<h3>Page Count: {{this.numberOfPages}}</h3>
+<h3>Author: {{this.author}}</h3>
+<h3>Genre: {{this.genre}}</h3>
+<h3>Is it worth reading? {{this.worthReading}}</h3>
+<h3>Year it was made: {{this.year}}</h3>
+<h3>Owned in hardcover? {{this.hardcover}}</h3>
+<h3>Owned in paperback? {{this.paperback}}</h3>
+
 
 <style>
     body{
@@ -7,3 +15,5 @@
         color: red;
     }
 </style>
+
+<a href="/books/editBook/{{this.id}}"> Edit/Delete</a>

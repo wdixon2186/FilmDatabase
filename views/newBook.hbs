@@ -1,9 +1,37 @@
 <h2>New Book:</h2>
 
-<form action="/" method="post" accept-charset="utf-8">
+<form action="/books" method="post" accept-charset="utf-8">
   <p>
-    <label>Book Name:</label>
-    <input type="text" name="Book Name"/>
+    <label>New Title:</label>
+    <input type="text" name="title"/>
+  </p>
+   <p>
+    <label>Number of Pages:</label>
+    <input type="text" name="numberOfPages"/>
+  </p>
+   <p>
+    <label>Author:</label>
+    <input type="text" name="author"/>
+  </p>
+   <p>
+    <label>genre:</label>
+    <input type="text" name="genre"/>
+  </p>
+   <p>
+    <label>Worth reading?: (true or false)</label>
+    <input type="text" name="worthReading"/>
+  </p>
+   <p>
+    <label>Year:</label>
+    <input type="text" name="year"/>
+  </p>
+   <p>
+    <label>hardcover?: (true or false)</label>
+    <input type="text" name="hardcover"/>
+  </p>
+   <p>
+    <label>paperback?: (true or false)</label>
+    <input type="text" name="paperback"/>
   </p>
   <input type="submit" value="Create" />
 </form>

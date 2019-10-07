@@ -20,9 +20,13 @@ app.listen(2700, () => console.log("We have lift off on port 2700"))
 module.exports = app;
 
 
-//Make the books link to the showbooks for that specific one. in showbooks add a link to editbooks for that specific one. make edit books be able to edit any of the model and work on the buttons. 
 
+
+//Do the same thing for movies.
+//create a back to library route in show.
 
 //work on design. 
+
+//Bonus. Allow it to track pictures in showBooks
 
 //Bonus. Add all of your books and movies.

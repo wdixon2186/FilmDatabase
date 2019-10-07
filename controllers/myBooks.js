@@ -10,30 +10,34 @@ router.get('/', (req,res) => {
     })
 })
 
+router.get('/newBook', (req, res) => {
+    res.render('newBook')
+  })
 router.post('/', (req, res) => {
     Books.create(req.body).then(newBook => {
         res.json(newBook);
     })
 })
 
-router.get('/:title', (req,res) => {
-    Books.find({title: req.params.title}).then(bookName => res.render('ShowBooks', {bookName}))
+router.get('/:id', (req,res) => {
+    Books.findOne({_id: req.params.id}).then(bookName => res.render('showBooks', bookName))
 })
 
-router.get('/editBook/:title', (req, res) => {
-    Books.findOne({title: req.params.title})
+router.get('/editBook/:id', (req, res) => {
+    Books.findOne({_id: req.params.id})
       .then(myBooks => {
         res.render("editBook", {myBooks })
       })
   })
-router.put('/editBook/:title',(req,res) => {
-    Books.findOneAndUpdate({title: req.params.title}, req.body, {new: true}).then(() => {
+router.put('/:id',(req,res) => {
+    Books.findByIdAndUpdate({_id: req.params.id}, req.body).then(myBooks => {
+        console.log(myBooks);
         res.redirect('/books')
     })
 })
 
-router.delete('/:title', (req,res) => {
-    Books.findOneAndRemove({ title: req.params.title}).then(() => {
+router.delete('/:id', (req,res) => {
+    Books.findOneAndDelete({ _id: req.params.id}).then(() => {
         res.redirect('/books')
     })
 })
