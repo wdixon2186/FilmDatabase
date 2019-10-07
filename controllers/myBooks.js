@@ -20,8 +20,14 @@ router.get('/:title', (req,res) => {
     Books.find({title: req.params.title}).then(bookName => res.render('ShowBooks', {bookName}))
 })
 
+router.get('/editBook/:title', (req, res) => {
+    Books.findOne({title: req.params.title})
+      .then(myBooks => {
+        res.render("editBook", {myBooks })
+      })
+  })
 router.put('/:title',(req,res) => {
-    Books.findOneAndUpdate({title: req.params.title}).then(() => {
+    Books.findOneAndUpdate({title: req.params.title}, req.body, {new: true}).then(() => {
         res.redirect('/books')
     })
 })
