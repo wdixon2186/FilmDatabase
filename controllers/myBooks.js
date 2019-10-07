@@ -26,7 +26,7 @@ router.get('/editBook/:title', (req, res) => {
         res.render("editBook", {myBooks })
       })
   })
-router.put('/:title',(req,res) => {
+router.put('/editBook/:title',(req,res) => {
     Books.findOneAndUpdate({title: req.params.title}, req.body, {new: true}).then(() => {
         res.redirect('/books')
     })

@@ -18,8 +18,8 @@ router.get('/:title', (req,res) => {
 })
 
 router.put('/:title',(req,res) => {
-    Movies.findOneAndUpdate({title: req.params.title}).then(() => {
-        res.redirect('/')
+    Movies.findOneAndUpdate({title: req.params.title}, req.body, {new: true}).then(() => {
+        res.redirect('/movies')
     })
 })
 
