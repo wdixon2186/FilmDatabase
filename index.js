@@ -11,6 +11,7 @@ app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json());
 app.use(methodOverride('_method'))
 app.set('view engine', 'hbs')
+app.use(express.static('public'));
 app.get("/", (req, res) => {
     res.redirect("/movies");
   });
@@ -25,8 +26,6 @@ module.exports = app;
 
 
 
-//Do the same thing for movies.
-//create a back to library route in show.
 
 //work on design. 
 
