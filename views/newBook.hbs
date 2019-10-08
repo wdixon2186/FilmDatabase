@@ -1,3 +1,4 @@
+<div>
 <h2>New Book:</h2>
 
 <form action="/books" method="post" accept-charset="utf-8">
@@ -33,5 +34,31 @@
     <label>paperback?: (true or false)</label>
     <input type="text" name="paperback"/>
   </p>
-  <input type="submit" value="Create" />
+  <input class="button"type="submit" value="Create" />
 </form>
+</div>
+
+<style>
+  body{
+    background-image: url("https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/book-quotes-1531945007.jpg?crop=1.00xw:0.753xh;0,0.247xh&resize=480:*")
+  }
+  div{
+    background-color:rgba(189, 213, 210, .7);
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 24px;
+    text-align: center;
+
+  }
+  .button{
+    width: 300px;
+    height: 50px;
+    background-color: rgb(165, 139, 114);
+    color: rgb(189, 213, 210);
+    font-size: 24px;
+  }
+  .button:hover{
+    background-color:salmon;
+  }
+</style>
