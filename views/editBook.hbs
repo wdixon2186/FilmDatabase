@@ -1,8 +1,11 @@
+{{!-- <head><link rel="stylesheet" type="text/css" href="public/css/bookEdit.css"></head> --}}
+<section>
 <h2>Edit Book:</h2>
-
 <form action="/books/{{myBooks.id}}?_method=put" method="post">
+
+<img src="https://redoystor.com/wp-content/uploads/2016/12/Book-Editing.png">
   <p>
-    <label>Name:</label>
+    <label>Title:</label>
     <input type="text" value="{{myBooks.title}}" name="title"/>
   </p>
   
@@ -32,19 +35,19 @@
  
 
     <p>
-    <label>Worth Reading:</label>
+    <label>Worth Reading: (enter true or false)</label>
     <input type="text" value="{{myBooks.worthReading}}" name="worthReading"/>
   </p>
  
 
     <p>
-    <label>Own it in Hardcover:</label>
+    <label>Own it in Hardcover: (enter true or false)</label>
     <input type="text" value="{{myBooks.hardcover}}" name="hardcover"/>
   </p>
  
 
     <p>
-    <label>Own it in paperback:</label>
+    <label>Own it in paperback: (enter true or false)</label>
     <input type="text" value="{{myBooks.paperback}}" name="paperback"/>
   </p>
   <input type="submit" value="Update" />
@@ -55,4 +58,24 @@
 <form action="/books/{{myBooks.id}}?_method=delete" method="post">
   <input type="submit" value="Remove">
 </form>
+</section>
 
+
+
+
+<style>
+img{
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+section{
+  z-index: 1;
+  color: red;
+  text-align: center;
+  
+}
+h2{
+  color: black;
+}
+</style>

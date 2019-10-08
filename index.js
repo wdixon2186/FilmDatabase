@@ -11,6 +11,9 @@ app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json());
 app.use(methodOverride('_method'))
 app.set('view engine', 'hbs')
+app.get("/", (req, res) => {
+    res.redirect("/movies");
+  });
 app.use('/books', booksController);
 app.use('/movies', movieController);
 
