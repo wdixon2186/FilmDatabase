@@ -1,3 +1,4 @@
+<section>
 <h1>Information on the book</h1>
 <h3>Title: {{this.title}}</h3>
 <h3>Page Count: {{this.numberOfPages}}</h3>
@@ -8,14 +9,6 @@
 <h3>Owned in hardcover? {{this.hardcover}}</h3>
 <h3>Owned in paperback? {{this.paperback}}</h3>
 
-
-<style>
-    body{
-        background-color: aqua;
-        color: red;
-    }
-</style>
-
 <a href="/books/editBook/{{this.id}}"> Edit/Delete</a>
 
 <br>
@@ -23,3 +16,18 @@
 <br>
 
 <a href="/books">Back to Book Library?</a>
+</section>
+
+<style>
+    body{
+        background-image: url("http://static1.squarespace.com/static/53cbed3de4b0c984e431b64d/53cd5808e4b0d40dcfea4855/593d549be4fcb5a7cbb206cc/1497193358774/open-book.jpg?format=1500w");
+    }
+    section{
+        text-align: center;
+    }
+    a:hover{
+        color:grey;
+        
+    }
+    
+</style>

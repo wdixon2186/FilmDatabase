@@ -48,11 +48,33 @@
     <label>Own it on DVD:</label>
     <input type="text" value="{{myMovies.dvd}}" name="dvd"/>
   </p>
-  <input type="submit" value="Update" />
+  <input class="button"type="submit" value="Update" />
 </form>
 
 <h2>Delete Movie?</h2>
 
 <form action="/movies/{{myMovies.id}}?_method=delete" method="post">
-  <input type="submit" value="Remove">
+  <input class="button"type="submit" value="Remove">
 </form>
+
+
+<style>
+  body{
+    background-image: url("https://cdn.pixabay.com/photo/2013/07/12/15/33/cutting-150066_960_720.png");
+   background-color: black;
+   text-align: center;
+   font-size: 18px;
+   font-weight: bold;
+   color:orange;
+  }
+  .button{
+    background-color: orange;
+    color: black;
+    width: 250px;
+    height: 75px;
+    font-size: 24px;
+  }
+  .button:hover{
+    background-color: grey;
+  }
+</style>
