@@ -19,7 +19,13 @@ app.use('/books', booksController);
 app.use('/movies', movieController);
 
 
-app.listen(2700, () => console.log("We have lift off on port 2700"))
+// app.listen(2700, () => console.log("We have lift off on port 2700"))
+
+app.set("port", process.env.PORT || 2700);
+
+app.listen(app.get("port"), () => {
+  console.log(`✅ PORT: ${app.get("port")} 🌟`);
+});
 
 module.exports = app;
 
