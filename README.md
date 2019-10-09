@@ -7,7 +7,7 @@ The site opens to the film index where it will list the title of every film put 
 ![example](https://i.imgur.com/pYfuOc1.png)
 
 ## INSTALLATION INSTRUCTIONS
-The database can and should be accessed through the Heroku link [here](https://books-and-movies-db.herokuapp.com/movies). However, if there was some modifications the user wanted to make, or they just wanted to look under the hood. All files are posted on this git hub repository [here] (https://github.com/wdixon2186/FilmDatabase). The files are connected and all are needed, so if the user decides to go down that route they should make sure to download everything.   
+The database can and should be accessed through the Heroku link [here](https://books-and-movies-db.herokuapp.com/movies). However, if there was some modifications the user wanted to make, or they just wanted to look under the hood. All files are posted on this git hub repository [here](https://github.com/wdixon2186/FilmDatabase). The files are connected and all are needed, so if the user decides to go down that route they should make sure to download everything.   
 
 - Including
 
