@@ -28,7 +28,8 @@ The database can and should be accessed through the Heroku link [here](https://b
     - _package.json_
 
 ## THOUGHT PROCESS
-My thought process going into this project was to take things in small strides and get those working before moving on. That's usually the best mindset when coding anything, but for this project I knew I was building with an extra model and if I didn't specify and focus I could run into a bug that would be very hard to find. For that reason I decided to only focus on building out the books section first, making sure to give specific names to the files in the folders so I knew which one belonged to which model. When I had the book section working I built out the movie section in the same way, again focusing on specifics. I completed all of my testing on my localhost browser, and when that finished it was time to deploy to Heroku. 
+My thought process going into this project was to take things in small strides and get those working before moving on. That's usually the best mindset when coding anything, but for this project I knew I was building with an extra model and if I didn't specify and focus I could run into a bug that would be very hard to find. For that reason I decided to only focus on building out the books section first, making sure to give specific names to the files in the folders so I knew which one belonged to which model. When I had the book section working I built out the movie section in the same way, again focusing on specifics. I completed all of my testing on my localhost browser, and when that finished it was time to deploy to Heroku.
+ 
 ![example2](https://i.imgur.com/Eq1TO9h.png)
 
 ## Unsolved problems
