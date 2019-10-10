@@ -11,7 +11,7 @@ app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json());
 app.use(methodOverride('_method'))
 app.set('view engine', 'hbs')
-app.use(express.static('public'));
+app.use("/assets", express.static('public'));
 app.get("/", (req, res) => {
     res.redirect("/movies");
   });
