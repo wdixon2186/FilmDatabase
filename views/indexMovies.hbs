@@ -5,9 +5,7 @@
     <h1>Movies</h1>
     <ul>
         {{#each myMovies}}
-        <li>
-            <a href="/movies/{{this.id}}"><img src={{this.picture}}></a>
-        </li>
+        <a href="/movies/{{this.id}}"><img src="{{this.picture}}"></a>
         {{/each}}
     </ul>
 
