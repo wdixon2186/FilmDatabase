@@ -3,18 +3,17 @@
 </head>
 <section>
     <h1>Movies</h1>
-    <ul>
-        {{#each myMovies}}
-        <li>
-            <a href="/movies/{{this.id}}">{{this.title}}</a>
-        </li>
-        {{/each}}
-    </ul>
+    <div class="anchor"><a href="/movies/newMovie">New Movie</a>
+    </div>
+    <br>
+    <div class="anchor">
+        <a href="/books">Want to see the books?</a>
+    </div>
+    {{#each myMovies}}
 
-    <a href="/movies/newMovie">New Movie</a>
-    <br>
-    <br>
-    <br>
-
-    <a href="/books">Want to see the books?</a>
+    <div class="pic">
+        <a href="/movies/{{this.id}}"><img class="img" src={{this.picture}}>
+        </a>
+    </div>
+    {{/each}}
 </section>
