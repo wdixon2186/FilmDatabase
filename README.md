@@ -53,7 +53,6 @@ There are not too many issues plaguing this code. Everything works, and doesn't 
 ## AUTHORS
 
 - William Dixon - Initial work
-  [Melaina Valentine](https://github.com/Emme313)
 
 ## ACKNOWLEDGMENTS
 
